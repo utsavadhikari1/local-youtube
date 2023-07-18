@@ -1,14 +1,19 @@
+import { Provider } from "react-redux";
 import "./App.css";
-import Head from "./components/Head";
 import Body from "./components/Body";
+import Head from "./components/Head";
+import store from "./utils/store";
+
+import React from "react";
 
 function App() {
   return (
-    <div>
-      {/* <h1 className="text-3xl font-bold"></h1> */}
-      <Head />
-      <Body />
-    </div>
+    <Provider store={store}>
+      <div>
+        <Head />
+        <Body />
+      </div>
+    </Provider>
   );
 }
 

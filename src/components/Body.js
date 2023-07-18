@@ -4,8 +4,9 @@ import MainContainer from "./MainContainer";
 
 const Body = () => {
   return (
-    <div>
-      <Sidebar /> <MainContainer />
+    <div className="  flex">
+      <Sidebar />
+      <MainContainer />
     </div>
   );
 };
